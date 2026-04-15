@@ -1,14 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3aad);
+    font-family: Arial, sans-serif;
+}
+
 .card {
-    background-color: antiquewhite;
-    border-radius: 20px;
     width: 380px;
     height: 480px;
     padding: 20px;
-    border: 3px solid black;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: white;
+    text-align: center;
+    box-shadow: 5px 6px 25px 3px black;
+    transition: all 0.3s ease;
+    border: solid black 3px
 }
 
 img {
@@ -17,19 +29,22 @@ img {
     border: 1px dashed black;
 }
 
-.card a {
-  background-color: rgb(25, 132, 239);
-  border-radius: 10px;  
-  width: 35%;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
+.role {
+    color: #666;
+    font-size: 28px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.card a {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 35%;
+    margin: auto;
+}
+
+.card a:hover {
+    background: #0056b3;
 }
